@@ -45,7 +45,7 @@ infrastructure cost — so it deploys as a static site on a city portal or a pub
 
 > **Hosted on [Vercel](https://vercel.com)** — auto-deployed from `main` on every push (zero-config Vite build).
 >
-> ** Live site:** _https://as-roan-rho.vercel.app/_
+>  Live site: _https://as-roan-rho.vercel.app/_
 
 Or run it locally in under a minute 👇
 
