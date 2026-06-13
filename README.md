@@ -8,7 +8,7 @@
 **12-hour PM2.5 forecast** and **personalised health guidance**, so residents and authorities can
 act *before* pollution peaks — not after.
 
-🏆 **SmartScape Hackathon 2026 — Track 2: Ecology & Urban Environment**
+ **SmartScape Hackathon 2026 — Track 2: Ecology & Urban Environment**
 
 [Live Demo](#-live-demo) · [Quick Start](#-quick-start) · [How the AI Works](#-how-the-ai-works) · [Results](#-results)
 
@@ -16,14 +16,14 @@ act *before* pollution peaks — not after.
 
 ---
 
-## 🎯 The problem
+##  The problem
 
 Air pollution causes an estimated **7 million premature deaths every year** (WHO), and fine
 particulate matter (**PM2.5**) is its most lethal component. Yet almost every municipal air-quality
 dashboard only shows conditions **right now**. Schools, commuters, and vulnerable residents discover
 the air was dangerous only once they have already breathed it. Cities react instead of prepare.
 
-## 💡 Our solution
+##  Our solution
 
 AeroSense forecasts PM2.5 **hour-by-hour for the next 12 hours** from data every city already
 collects (recent sensor readings + weather), and translates each prediction into a clear **US EPA AQI
@@ -31,25 +31,25 @@ category** with actionable **health advice** for the general public and sensitiv
 runs **client-side in the browser** from a trained model — no backend, no API keys, near-zero
 infrastructure cost — so it deploys as a static site on a city portal or a public kiosk.
 
-## ✨ Features
+##  Features
 
 | | |
 |---|---|
-| 🌆 **Live city snapshot** | Current AQI gauge, 48-hour trend, weather, and a district-level air-quality map. |
-| 📈 **12-hour AI forecast** | Autoregressive PM2.5 forecast plotted against real observations, with hour-by-hour error. |
-| 🧪 **Interactive predictor** | Drag weather & time sliders and watch the model re-predict instantly, with category confidence. |
-| ❤️ **Health advisory** | EPA-aligned guidance that adapts to the predicted category and to sensitive groups. |
-| 🔬 **Model transparency** | Held-out metrics, confusion matrix, per-class scores, feature importance, baselines. |
+|  **Live city snapshot** | Current AQI gauge, 48-hour trend, weather, and a district-level air-quality map. |
+|  **12-hour AI forecast** | Autoregressive PM2.5 forecast plotted against real observations, with hour-by-hour error. |
+|  **Interactive predictor** | Drag weather & time sliders and watch the model re-predict instantly, with category confidence. |
+|  **Health advisory** | EPA-aligned guidance that adapts to the predicted category and to sensitive groups. |
+|  **Model transparency** | Held-out metrics, confusion matrix, per-class scores, feature importance, baselines. |
 
-## 🚀 Live demo
+##  Live demo
 
 > **Hosted on [Vercel](https://vercel.com)** — auto-deployed from `main` on every push (zero-config Vite build).
 >
-> **🔗 Live site:** _link added after the first deploy_
+> ** Live site:** _https://as-roan-rho.vercel.app/_
 
 Or run it locally in under a minute 👇
 
-## ⚡ Quick start
+##  Quick start
 
 ```bash
 # 1. install dependencies
@@ -140,13 +140,13 @@ as/
 └── vite.config.ts            # zero-config Vite build (auto-detected by Vercel)
 ```
 
-## 🛠️ Built with
+##  Built with
 
 `React 18` · `TypeScript` · `Vite` · **custom ML in Node (no ML libraries)** · hand-rolled SVG charts ·
 UCI Beijing PM2.5 dataset. The entire machine-learning stack — CSV parsing, standardisation, ridge
 regression, and evaluation — is implemented from scratch so the maths is fully auditable.
 
-## 🧭 How this maps to the judging criteria
+##  How this maps to the judging criteria
 
 | Criterion | Where to look |
 |---|---|
@@ -157,12 +157,6 @@ regression, and evaluation — is implemented from scratch so the maths is fully
 | **Data quality & methodology** | Real 41k-row dataset, leak-free split, baselines, reproducible. |
 | **Documentation** | This README, dataset card, code comments, and the methodology notebook. |
 
-## ⚠️ Limitations & roadmap
-
-- Trained on a **single station**; the district map is an *illustrative* spatial decomposition.
-- The weather-only scenario model is intentionally limited (R² 0.42).
-- **Next:** multi-station spatial maps, gradient-boosted trees for sharper peaks, live sensor +
-  Copernicus satellite ingestion, and push alerts for sensitive-group users.
 
 ## 📄 License
 
