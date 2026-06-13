@@ -43,10 +43,9 @@ infrastructure cost — so it deploys as a static site on a city portal or a pub
 
 ## 🚀 Live demo
 
-> Deployed automatically to **GitHub Pages** on every push to `main` (see [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)).
-> Once Pages is enabled for the repo (Settings → Pages → Source: *GitHub Actions*), the app is served at:
+> **Hosted on [Vercel](https://vercel.com)** — auto-deployed from `main` on every push (zero-config Vite build).
 >
-> **https://qprtfck-arch.github.io/as/**
+> **🔗 Live site:** _link added after the first deploy_
 
 Or run it locally in under a minute 👇
 
@@ -138,7 +137,7 @@ as/
 ├── src/                      # React + TypeScript front-end
 │   ├── lib/                  #   aqi · model (in-browser inference) · data
 │   └── components/           #   Overview · Forecast · Predictor · ModelInsights · charts
-└── .github/workflows/        # CI deploy to GitHub Pages
+└── vite.config.ts            # zero-config Vite build (auto-detected by Vercel)
 ```
 
 ## 🛠️ Built with
